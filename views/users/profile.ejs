@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Profile Page</h1>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>_id</td>
+                <td>username</td>
+                <td>email</td>
+                <td>password</td>
+                <td>is_varified</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr> <td><%=user._id %></td>
+                <td><%=user.username %></td>
+                <td><%=user.email %></td>
+                <td><%=user.password %></td>
+                <td><%=user.is_varified %></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <a href="/api/logout">Logout</a>
+</body>
+</html>
